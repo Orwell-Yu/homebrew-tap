@@ -5,21 +5,21 @@
 class Korthex < Formula
   desc "AI-native Kubernetes TUI tool - speak to your cluster, see everything"
   homepage "https://github.com/Orwell-Yu/korthex"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.1.0/korthex_0.1.0_darwin_amd64.tar.gz"
-      sha256 "74b56db330e274bb8399226e1be6e708e85211e526fbd688caf3d4cb2f475c5b"
+      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.2.0/korthex_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b54b83ddadae1dba67ccec320bbcffb850c9d59a1e9d063adad401b2b873e706"
 
       define_method(:install) do
         bin.install "korthex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.1.0/korthex_0.1.0_darwin_arm64.tar.gz"
-      sha256 "2566f778e7557f9b68efe202f7c302a44f56a96f59acf7d3d9742c90049e2e73"
+      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.2.0/korthex_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d60fe0763d7a64cf100d17f6858d541f89bfe05c0729aff09648c1b6ed8034ee"
 
       define_method(:install) do
         bin.install "korthex"
@@ -29,15 +29,15 @@ class Korthex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.1.0/korthex_0.1.0_linux_amd64.tar.gz"
-      sha256 "ae820f1a61a7a6956dc4f9c3f8f525d26f54c5f9588e6600744bca825345dc7c"
+      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.2.0/korthex_0.2.0_linux_amd64.tar.gz"
+      sha256 "a7510dd4d5ca57a21a55a0fcc28b2f7c5a97df50dd014a2cff756cfd30b202b8"
       define_method(:install) do
         bin.install "korthex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.1.0/korthex_0.1.0_linux_arm64.tar.gz"
-      sha256 "3eae73840b2385ccdfecd7ec69e2f9acd334472c505b85d11b7e165eb18ff17d"
+      url "https://github.com/Orwell-Yu/korthex/releases/download/v0.2.0/korthex_0.2.0_linux_arm64.tar.gz"
+      sha256 "5b8db954833150249e0b8e1879a9cee5feb6aecd7aa19ba12800bfa3c0762ec1"
       define_method(:install) do
         bin.install "korthex"
       end
